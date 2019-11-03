@@ -1,0 +1,12 @@
+<h1>Product List</h1>
+<div class="content">
+    <div>
+        <ul class="row">
+            <li *ngFor="let t of productApi.getProductList()" class="col col-md-3">
+                <app-product [product]="t"></app-product>
+            </li>
+
+        </ul>
+    </div>
+
+</div>
